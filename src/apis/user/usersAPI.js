@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const registerAPI = async (userData) => {
   const response = await axios.post(
-    "https://authapi-dev3.onrender.com/api/users/register",
+    "https://opneaicontentgenerator.onrender.com/api/v1/users/register",
     {
       email: userData?.email,
       password: userData?.password,
