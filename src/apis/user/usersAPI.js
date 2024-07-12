@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const registerAPI = async (userData) => {
   const response = await axios.post(
-    "http://localhost:8090/api/v1/users/register",
+    "https://authapi-dev3.onrender.com/api/users/register",
     {
       email: userData?.email,
       password: userData?.password,
