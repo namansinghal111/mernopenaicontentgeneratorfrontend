@@ -58,7 +58,6 @@ export const logoutAPI = async () => {
 export const getUserProfileAPI = async () => {
   const response = await axios.get(
     "https://opneaicontentgenerator.onrender.com/api/v1/users/profile",
-
     {
       withCredentials: true,
     }
