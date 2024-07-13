@@ -34,7 +34,7 @@ export const loginAPI = async (userData) => {
 
 export const checkUserAuthStatusAPI = async () => {
   const response = await axios.get(
-    "http://localhost:8090/api/v1/users/auth/check",
+    "https://opneaicontentgenerator.onrender.com/api/v1/users/auth/check",
     {
       withCredentials: true,
     }
@@ -45,7 +45,7 @@ export const checkUserAuthStatusAPI = async () => {
 
 export const logoutAPI = async () => {
   const response = await axios.post(
-    "http://localhost:8090/api/v1/users/logout",
+    "https://opneaicontentgenerator.onrender.com/api/v1/users/logout",
     {},
     {
       withCredentials: true,
@@ -57,7 +57,7 @@ export const logoutAPI = async () => {
 
 export const getUserProfileAPI = async () => {
   const response = await axios.get(
-    "http://localhost:8090/api/v1/users/profile",
+    "https://opneaicontentgenerator.onrender.com/api/v1/users/profile",
 
     {
       withCredentials: true,
