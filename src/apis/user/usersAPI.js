@@ -19,7 +19,7 @@ export const registerAPI = async (userData) => {
 
 export const loginAPI = async (userData) => {
   const response = await axios.post(
-    "http://localhost:8090/api/v1/users/login",
+    "https://opneaicontentgenerator.onrender.com/api/v1/users/login",
     {
       email: userData?.email,
       password: userData?.password,
